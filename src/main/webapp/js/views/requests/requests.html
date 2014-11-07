@@ -1,0 +1,14 @@
+
+<div id="reports">
+	<% _.each(requests, function(request) { %>
+	<a class="box box-left gainsboro report" href="">
+		<div class="report-image">
+			<img src="imgs/logo.png" width="200px" />
+		</div>
+		<div class="report-content">
+			<h4><%= request.service_request_datetime %></h4>
+			<p><%= request.service_request_description %></p>
+		</div>
+	</a>
+	<% }); %>
+</div>
